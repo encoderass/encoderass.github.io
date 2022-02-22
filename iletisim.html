@@ -13,6 +13,14 @@
   
     <link rel="stylesheet" href="style.css">
 
+      <script>
+    window.onload = function(){
+    whatsapp_se_btn_phone = '15873339328'; //Telefon Numaranız
+                 whatsapp_se_btn_msg = 'Merhaba, konuşmak ister misiniz?'; //Mesajınızı Yazınız
+             $(document.body).append('<div class="whatsapp-se-btn"></div>'),whatsapp_se_btn_base64="https://goo.gl/y2Sj2W",
+             $(".whatsapp-se-btn").attr("style","position:fixed;bottom:15px;right:15px;overflow:hidden;background:#1bd741;color:#ffffff;text-align:center;padding:4px 4px;z-index:9999999;cursor:pointer;box-shadow:#000000 0 0 5px;border-radius:100px;"),$(".whatsapp-se-btn").html('<img style="width: 45px;" src="'+whatsapp_se_btn_base64+'" alt="Whatsapp ile İletişime Geç" />'),$(".whatsapp-se-btn").attr("onclick",'location.href="https://wa.me/'+whatsapp_se_btn_phone+"?text="+whatsapp_se_btn_msg+'"');}
+    </script>
+
 </head>
 <body>
     
@@ -103,32 +111,8 @@
 
 </section>
 
-<script type=”text/javascript”>
-
-(function () {
-
-var options = {
-
-WhatsApp: “+15873339328”, //
-
-call_to_action: “Merhaba, nasıl yardımcı olabilirim?”, // Görünecek metin
-
-position: “left”, // Position may be ‘right’ or ‘left’
-
-};
-
-var proto = document.location.protocol, host = “whatshelp.io”, url = proto + “//static.” + host;
-
-var s = document.createElement(‘script’); s.type = ‘text/javascript’; s.async = true; s.src = url + ‘/widget-send-button/js/init.js’;
-
-s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-
-var x = document.getElementsByTagName(‘script’)[0]; x.parentNode.insertBefore(s, x);
-
-})();
-
-</script>
-
+<!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
 
 </body>
 </html>
